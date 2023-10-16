@@ -1,0 +1,38 @@
+{
+    "name": "script injector",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "description": "injects scripts into the pages as selected.",
+    "author": "shivshive",
+    "action": {
+        "default_title": "👉 Scripts Injector 👈"
+    },
+    "icons": {
+        "16": "src/letter-a.png",
+        "32": "src/letter-a.png",
+        "48": "src/letter-a.png",
+        "128": "src/letter-a.png"
+    },
+    "permissions": [
+        "activeTab",
+        "sidePanel",
+        "contextMenus",
+        "storage",
+        "scripting",
+        "tabs",
+        "browsingData",
+        "bookmarks",
+        "proxy",
+        "webNavigation"
+    ],
+    "side_panel": {
+        "default_path": "src/sidepanel.html"
+    },
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    },
+    "host_permissions": [
+        "https://*/*"
+    ]
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Sidepanel</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <style>
+        body {
+            background: indigo;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        label {
+            color: white;
+        }
+        select , option {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid fw-bold heading py-3 text-center text-uppercase">
+        <h1 class="fw-bolder fw-semibold h1">Scripts Injector</h1>
+        <img src="header-image/purple-dragon.png" class="img-fluid rounded w-25 mx-auto d-block" alt="header">
+    </div>
+    <div class="btn-group container-fluid mb-4 text-center min-vw-100">
+        <!-- <button class="btn btn-outline-light fw-semibold w-auto p3" id="load-textarea">Load Payload</button> -->
+        <button class="btn btn-outline-light fw-semibold w-auto p3" id="load-script">Load Scripts</button>
+        <button class="btn btn-outline-light fw-semibold w-auto p3" id="load-frames">Load Frames</button>
+        
+    </div>
+    <div class="container-fluid mw-75" id="scripts-container">
+        <div class="form-group my-2">
+            <label for="scripts-name" class="mb-1">Select Script To Execute</label>
+            <select class="form-control" id="scripts-name">
+            </select>
+        </div>
+        <div class="form-group mt-3">
+            <label for="scripts-name" class="mb-1">Select Frames To Inject Script</label>
+            <select class="form-control" id="frames-name">
+            </select>
+        </div>
+        <button type="submit" class="btn btn-outline-light fw-semibold w-100 p3 mt-4 min-vw-75" id="run-script">Run Script</button>
+    </div>
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>
