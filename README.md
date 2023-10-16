@@ -1,3 +1,3 @@
 # chromeext-script-injector
 
-![Interface]("interface.jpg")
+![Interface](./interface.jpg)
